@@ -1,8 +1,8 @@
 import { ThreeCircles } from 'react-loader-spinner';
 import css from "./Loader.module.css"
 
-export default function Loader() {
-return (
+const Loader: React.FC = () => {
+  return (
 <div className={css.container}>
     <ThreeCircles
   visible={true}
@@ -15,4 +15,6 @@ return (
   />
 </div>
 );
-}
+};
+
+export default Loader;
